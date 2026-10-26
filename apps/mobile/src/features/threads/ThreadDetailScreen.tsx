@@ -421,6 +421,7 @@ function ThreadDetailBody(props: ThreadDetailScreenProps) {
     };
   }, []);
   useEffect(() => {
+    // oxlint-disable-next-line react/set-state-in-effect -- Any native keyboard report clears the suspect flag set when the app resumed.
     setKeyboardStateSuspect(false);
   }, [isKeyboardVisible, liveKeyboardHeight]);
   const handleOwnedInputFocusChange = (focused: boolean) => {

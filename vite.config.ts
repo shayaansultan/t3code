@@ -229,6 +229,7 @@ export default defineConfig({
       "react/memo-dependencies": "error",
       "react/purity": "error",
       "react/refs": "error",
+      "react/set-state-in-effect": "error",
       "react/immutability": "error",
       "react/no-array-index-key": "error",
       "react/no-unstable-nested-components": "error",
